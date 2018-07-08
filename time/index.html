@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>与之之在一起的日子</title>
+<meta name="keywords" content="Flyuz"/>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+<div class="content">
+	<div class="wrapper">
+		<div class="light"><i></i></div>
+		<hr class="line-left">
+		<hr class="line-right">
+		<div class="main">
+			<h1 class="title">记录重要的瞬间</h1>
+
+			<div class="year">
+				<h2><a href="#">很久以后~<i></i></a></h2>
+				<div class="list">
+					<ul>
+						<li class="cls">
+							<p class="date"></p>
+							<p class="intro">未完待续...</p>
+							<p class="version">&nbsp;</p>
+							<div class="more">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="year">
+				<h2><a href="#">2018年<i></i></a></h2>
+				<div class="list">
+					<ul>
+
+						<li class="cls">
+							<p class="date">7月1日</p>
+							<p class="intro">我想和你一直在一起❤</p>
+							<p class="version">&nbsp;</p>
+						</li>
+
+						<li class="cls">
+							<p class="date">6月17日</p>
+							<p class="intro">摇滚之夜~西安一日游</p>
+							<p class="version">&nbsp;</p>
+						</li>
+
+						<li class="cls">
+							<p class="date">5月12日</p>
+							<p class="intro">一起看复联3</p>
+							<p class="version">&nbsp;</p>
+						</li>
+
+						<li class="cls">
+							<p class="date">4月20日</p>
+							<p class="intro">表白成功</p>
+							<p class="version">&nbsp;</p>
+						</li>
+
+						<li class="cls">
+							<p class="date">4月14日</p>
+							<p class="intro">决定约你</p>
+							<p class="version">&nbsp;</p>
+						</li>
+
+						<li class="cls">
+							<p class="date">3月24日</p>
+							<p class="intro">第一次正式见面 </p>
+							<p class="version">&nbsp;</p>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="year">
+				<h2><a href="#">2017年<i></i></a></h2>
+				<div class="list">
+					<ul>
+						<li class="cls">
+							<p class="date">10月20日</p>
+							<p class="intro">加了QQ好友</p>
+							<p class="version">&nbsp;</p>
+							<div class="more">
+								<p>缘分从这一天开始</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(".main .year .list").each(function(e, target){
+	var $target=$(target),
+	$ul = $target.find("ul");
+	$target.height($ul.outerHeight()), $ul.css("position", "absolute");
+});
+$(".main .year>h2>a").click(function(e){
+	e.preventDefault();
+	$(this).parents(".year").toggleClass("close");
+});
+</script>
+</body>
+</html>
